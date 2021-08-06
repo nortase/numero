@@ -1,0 +1,14 @@
+#1 a 10, lista, programa continuar até acertar
+import random
+
+valor_aleatorio = random.randint(1,10)
+acertou = False
+while acertou == False:
+  chute = int(input("chute o número de 1 a 10  "))
+  if chute < valor_aleatorio:
+    print("chutou baixo...")
+  elif chute > valor_aleatorio:
+    print("chutou alto...")
+  elif chute == valor_aleatorio:
+    print("você acertou")
+    acertou = True
